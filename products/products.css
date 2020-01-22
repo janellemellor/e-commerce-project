@@ -1,0 +1,12 @@
+li {
+    text-align: center;
+    list-style-type: none;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: lightgoldenrodyellow;
+    border: solid tomato 5px;
+    margin: 50px;
+    padding: 15px;
+    color: tomato;
+}
