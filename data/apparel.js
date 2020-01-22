@@ -1,7 +1,7 @@
 const sweater = {
     id: 'sweater', 
     name: 'Monkey Sweater',
-    image: 'monkey sweater.jpeg',
+    image: 'sweater.jpg',
     description: 'a cozy sweater with your favorite sock monkey that you know and love',
     category: 'apparel',
     price: 26.98,
@@ -10,7 +10,7 @@ const sweater = {
 const hoodie = {
     id: 'hoodie', 
     name: 'grey hoodie',
-    image: 'pit bull hoodie.jpeg',
+    image: 'hoodie.jpg',
     description: 'an everyday hoodie to keep you pitty dry and warm',
     category: 'apparel',
     price: 15.99,
@@ -19,7 +19,7 @@ const hoodie = {
 const jacket = {
     id: 'jacket', 
     name: 'green jacket',
-    image: 'pit bull jacket.jpeg',
+    image: 'jacket.jpg',
     description: 'a delux jacket to keep your pitty toasty in the cold weather',
     category: 'apparel',
     price: 35.97,
@@ -28,7 +28,7 @@ const jacket = {
 const raincoat = {
     id: 'raincoat', 
     name: 'yellow raincoat',
-    image: 'rainjacket.jpeg',
+    image: 'rainjacket.png',
     description: 'a classic raincoat that will keep even the most rain-avoidant pitty dry',
     category: 'apparel',
     price: 17.99,
@@ -37,7 +37,7 @@ const raincoat = {
 const hat = {
     id: 'hat', 
     name: 'chef hat',
-    image: 'chef hat.jpeg',
+    image: 'hat.jpg',
     description: 'the perfect hat for your little chef',
     category: 'apparel',
     price: 12.99,
@@ -46,7 +46,7 @@ const hat = {
 const tShirt = {
     id: 'shirt', 
     name: 'tshirt',
-    image: 'tshirt.jpeg',
+    image: 'tshirt.jpg',
     description: 'the t for your pit who likes to lounge in style',
     category: 'apparel',
     price: 15.48,

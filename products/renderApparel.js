@@ -11,10 +11,10 @@ export default function renderApparel(apparel) {
     p.className = 'price';
 
     const USDollar = '$' + apparel.price.toFixed(2);
-    p.textContent(USDollar);
+    p.textContent = USDollar;
     
     const img = document.createElement('img');
-    img.src = '../assets'; + apparel.image;
+    img.src = '../assets/' + apparel.image;
     li.appendChild(img);
 
     const button = document.createElement('button');
