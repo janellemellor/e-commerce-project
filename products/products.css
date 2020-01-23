@@ -1,0 +1,19 @@
+li {
+    list-style-type: none;
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: lightgoldenrodyellow;
+    border: solid tomato 5px;
+    margin: 15px;
+    padding: 10px;
+    color: tomato;
+    text-align: center;
+    
+    
+}
+
+img {
+    height: 125px;
+    width: 130px;
+}
