@@ -2,8 +2,6 @@ export default [
     { id: '2', 
         name: 'grey hoodie',
         price: 15.99,
-
-
     },
 
     {
