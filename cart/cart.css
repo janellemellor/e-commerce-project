@@ -1,0 +1,10 @@
+table {
+    border: 3px solid navy;
+    height: 50%;
+    width: 90%;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+};
+
