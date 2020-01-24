@@ -14,7 +14,6 @@ for (let i = 0; i < apparel.length; i ++) {
     const generateCart = renderLineItems(cartData, findCartItemsById);
 
     table.appendChild(generateCart);
-   
 }
 
 

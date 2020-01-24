@@ -14,3 +14,17 @@ export function calcLineItem(numberOfItems, itemPrice) {
     return priceRounded;
 }
 
+
+export function calcOrderItem(cartData, apparel) {
+    for(let i =0; i < cartData.length; i++) {
+        
+        const orderTotal = calcLineItem(cartData.quantity, apparel.price);
+
+        const orderTotalRounded = Math.round(price * 100) / 100;
+        return orderTotalRounded;
+
+}
+
+
+// TDD test in /test/utils.js for a function that lives in /common/utils.js called calcOrderItem. This function takes the cart array and products array. Calculate the total of your cart data as the expected value.
+
