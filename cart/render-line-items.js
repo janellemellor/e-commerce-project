@@ -1,4 +1,4 @@
-import calcLineItem from '../common/utils.js';
+import { calcLineItem } from '../common/utils.js';
 
 function renderLineItems(cartLineItem, correspondingProduct) {
 
