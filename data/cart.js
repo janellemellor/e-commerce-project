@@ -1,18 +1,15 @@
 export default [
     { id: '2', 
-        name: 'grey hoodie',
-        price: 15.99,
+        quantity: 4
     },
 
     {
         id: '4', 
-        name: 'yellow raincoat',
-        price: 23.5,
+        quantity: 2,
     },
 
     { id: '7', 
-        name: 'reading glasses',
-        price: 8.99,
+        quantity: 1,
 
     },
 
