@@ -18,8 +18,14 @@ function renderLineItems(cartLineItem, correspondingProduct) {
 
     const cartTotal = document.createElement('td');
 
-    cartTotal.textContent = calcLineItem(quantityTD, priceTD);
+    const totalItems = calcLineItem(cartLineItem.quantity, correspondingProduct.price);
+    
+    cartTotal.textContent = totalItems;
+
+
     tr.appendChild(cartTotal);
+
+    
 
     return tr;  
 }

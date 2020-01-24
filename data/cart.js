@@ -1,4 +1,4 @@
-const cartdata = [
+const cartData = [
     { id: '2', 
         quantity: 4
     },
@@ -15,4 +15,4 @@ const cartdata = [
 
 ];
 
-export default cartdata;
+export default cartData;

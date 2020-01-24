@@ -6,12 +6,12 @@ import findById, { calcOrderItem } from '../common/utils.js';
 
 const table = document.getElementById('table');
 
-for (let i = 0; i < apparel.length; i ++) {
+for (let i = 0; i < cartData.length; i ++) {
     let cartItems = cartData[i];
 
-    const findCartItemsById = findById(apparel.id, cartItems);
+    const findCartItemsById = findById(cartItems.id, apparel);
 
-    const generateCart = renderLineItems(cartData, findCartItemsById);
+    const generateCart = renderLineItems(cartItems, findCartItemsById);
 
 
     
