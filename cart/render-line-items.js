@@ -2,27 +2,31 @@ import calcLineItem from '../common/utils.js';
 
 function renderLineItems(cartLineItem, correspondingProduct) {
 
-    const tr = document.createElement('tr');     
+    for (let i = 0; i < correspondingProduct.length; i ++) {
 
-    const nameTD = document.createElement('td');
-    nameTD.textContent = cartLineItem.name;
-    tr.appendChild(nameTD);
+        const tr = document.createElement('tr');     
+        const nameTD = document.createElement('td');
+        nameTD.textContent = cartLineItem.name;
+        tr.appendChild(nameTD);
     
-    const quantityTD = document.createElement('td');
-    quantityTD.textContent = cartLineItem.quantity;
-    tr.appendChild(quantityTD);
+        const quantityTD = document.createElement('td');
+        quantityTD.textContent = cartLineItem.quantity;
+        tr.appendChild(quantityTD);
 
-    const priceTD = document.createElement('td');
-    priceTD.textContent = cartLineItem.price;
-    tr.appendChild(priceTD);
+        const priceTD = document.createElement('td');
+        priceTD.textContent = cartLineItem.price;
+        tr.appendChild(priceTD);
 
-    const cartTotal = document.createElement('td');
+        const cartTotal = document.createElement('td');
 
-    cartTotal.textContent = calcLineItem(quantityTD, priceTD);
-    tr.appendChild(cartTotal);
+        cartTotal.textContent = calcLineItem(quantityTD, priceTD);
+        tr.appendChild(cartTotal);
 
-    return tr;
+        tr.append(nameTD, quantityTD, priceTD, cartTotal);
 
+        return tr;
+    
+    }
 }
 
 export default renderLineItems;
