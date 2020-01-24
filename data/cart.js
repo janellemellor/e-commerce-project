@@ -1,4 +1,4 @@
-export default [
+const cartdata = [
     { id: '2', 
         quantity: 4
     },
@@ -15,3 +15,4 @@ export default [
 
 ];
 
+export default cartdata;

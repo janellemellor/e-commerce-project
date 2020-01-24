@@ -21,8 +21,6 @@ function renderLineItems(cartLineItem, correspondingProduct) {
     cartTotal.textContent = calcLineItem(quantityTD, priceTD);
     tr.appendChild(cartTotal);
 
-    tr.append(nameTD, quantityTD, priceTD, cartTotal);
-
     return tr;  
 }
 

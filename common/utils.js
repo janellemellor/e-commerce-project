@@ -1,3 +1,5 @@
+// import apparel from '../data/apparel.js';
+
 export default function findById(itemId, cartArray) {
     for (let i = 0; i < cartArray.length; i++){
         const arrayItem = cartArray[i];
@@ -5,6 +7,7 @@ export default function findById(itemId, cartArray) {
             return arrayItem;
         }
     }
+    return null;
 }
 
 
@@ -15,16 +18,12 @@ export function calcLineItem(numberOfItems, itemPrice) {
 }
 
 
-export function calcOrderItem(cartData, apparel) {
-    for(let i =0; i < cartData.length; i++) {
-        
-        const orderTotal = calcLineItem(cartData.quantity, apparel.price);
 
-        const orderTotalRounded = Math.round(price * 100) / 100;
-        return orderTotalRounded;
-
+export function calcOrderItem(cart, apparel){
+    let orderTotal = 0;
+    
+    for (let i = 0; i < cart.length; i++){
+        orderTotal += calcLineItem(cart[i].quantity, findById(cart[i].id, apparel).price); 
+    }
+    return orderTotal;
 }
-
-
-// TDD test in /test/utils.js for a function that lives in /common/utils.js called calcOrderItem. This function takes the cart array and products array. Calculate the total of your cart data as the expected value.
-
