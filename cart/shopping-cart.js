@@ -13,14 +13,15 @@ for (let i = 0; i < cartData.length; i ++) {
 
     const generateCart = renderLineItems(cartItems, findCartItemsById);
 
-
-    
+    const displayOrderTotal = calcOrderItem(cartItems, apparel);
 
     table.appendChild(generateCart);
+
+    // table.appendChild(displayOrderTotal);
+   
 }
 
 
 
-// Use the function to calculate the cart total and display the result in the appropriate element.
 
 
