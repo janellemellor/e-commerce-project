@@ -25,6 +25,5 @@ export function calcOrderItem(cart, apparel){
     for (let i = 0; i < cart.length; i++){
         orderTotal += calcLineItem(cart[i].quantity, findById(cart[i].id, apparel).price); 
     }
-    console.log(orderTotal);
     return orderTotal;
 }
