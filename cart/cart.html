@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+<head>
     <link rel="stylesheet" href="../common/main.css">
+
     <link rel="stylesheet" href="cart.css">
-  
+
     <title>Shopping Cart</title>
 </head>
+
 <body>
-    <h2>Shopping Cart</h2>
+  <header>
+    <h1>Shopping Cart</h1>
+    <div id = "return-to-store-link">
+      <a href = "../products/products.html">Return to Store</a>
+      </div>
+  </header>
+ 
 
 <table id = 'table'>
   <thead>
@@ -28,7 +33,7 @@
 
 <tfoot>
   <tr>
-    <td colspan="3">
+    <td colspan="3" 
       <span>Order Total</span>
     </td>
     <td> <span id = "order-total"></span>
@@ -37,7 +42,7 @@
 </tfoot>
 </table>
 
-<div>
+<div id = "div-button">
   <button id = "order-button">Place Order</button>
 </div>
 <script type="module" src="./shopping-cart.js"></script>
