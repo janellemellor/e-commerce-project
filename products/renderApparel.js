@@ -1,3 +1,7 @@
+import findById from '../common/utils.js';
+import apparel from '../data/apparel.js';
+// import cartData from '../data/cart.js';
+
 export default function renderApparel(apparel) {
     const li = document.createElement('li');
     li.className = apparel.category;
@@ -21,22 +25,40 @@ export default function renderApparel(apparel) {
     button.textContent = 'Add';
     button.value = apparel.id;
     button.addEventListener('click', () => {
-       const shoppingCart = localStorage.getItem('CART');
-       if(!shoppingCart) {
-        return [];  
-    } else {
-        return JSON.parse(shoppingCart);
-     
+        
+        const aCart = localStorage.getItem('CART');
+        
+        const makeShoppingCart = () => {
+            if (!aCart) {
+                return [];  
+            } else {
+                return JSON.parse(aCart);
+            }};
+    
+        const shoppingCart = makeShoppingCart();
 
-        } if(shoppingCart ) {return 
+        let apparelInCart = findById(shoppingCart.id, apparel);
 
-    }
+        if (!apparelInCart) {
+            const lineItemOne = {
+                id: apparel.id,
+                quantity: 1
+            };
 
-      
+            shoppingCart.push(lineItemOne);
+        } else {
+            apparelInCart.quantity++;
+        }
+
+        const updatedCart = JSON.stringify(shoppingCart);
+        localStorage.setItem('CART', updatedCart);
+        
+    });
+    
 
     p.appendChild(button);
 
     li.appendChild(p);
 
     return li;
-} 
+}
