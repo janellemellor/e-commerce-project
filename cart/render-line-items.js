@@ -1,4 +1,4 @@
-import { calcLineItem } from '../common/utils.js';
+import { calcLineItem, calcOrderItem } from '../common/utils.js';
 
 function renderLineItems(cartLineItem, correspondingProduct) {
 
@@ -16,14 +16,13 @@ function renderLineItems(cartLineItem, correspondingProduct) {
     priceTD.textContent = correspondingProduct.price;
     tr.appendChild(priceTD);
 
-    const cartTotal = document.createElement('td');
+    const lineItemTotal = document.createElement('td');
 
-    const totalItems = calcLineItem(cartLineItem.quantity, correspondingProduct.price);
+    const totalLineItems = calcLineItem(cartLineItem.quantity, correspondingProduct.price);
     
-    cartTotal.textContent = totalItems;
+    lineItemTotal.textContent = totalLineItems;
 
-
-    tr.appendChild(cartTotal);
+    tr.appendChild(lineItemTotal);
 
     
 

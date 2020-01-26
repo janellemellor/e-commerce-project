@@ -6,6 +6,9 @@ import findById, { calcOrderItem } from '../common/utils.js';
 
 const table = document.getElementById('table');
 
+
+const displayOrder = document.getElementById('order-total');
+
 for (let i = 0; i < cartData.length; i ++) {
     let cartItems = cartData[i];
 
@@ -13,14 +16,17 @@ for (let i = 0; i < cartData.length; i ++) {
 
     const generateCart = renderLineItems(cartItems, findCartItemsById);
 
-
-    
-
     table.appendChild(generateCart);
+
+
+    const orderTotal = calcOrderItem(cartData, apparel);
+    displayOrder.textContent = orderTotal;
+
+
+   
 }
 
 
 
-// Use the function to calculate the cart total and display the result in the appropriate element.
 
 
