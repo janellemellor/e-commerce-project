@@ -1,6 +1,4 @@
 import findById from '../common/utils.js';
-import apparel from '../data/apparel.js';
-// import cartData from '../data/cart.js';
 
 export default function renderApparel(apparel) {
     const li = document.createElement('li');
@@ -10,6 +8,10 @@ export default function renderApparel(apparel) {
     const h3 = document.createElement('h3');
     h3.textContent = apparel.name;
     li.appendChild(h3);
+
+    const descriptionP = document.createElement('p');
+    descriptionP.textContent = apparel.description;
+    li.appendChild(descriptionP);
 
     const p = document.createElement('p');
     p.className = 'price';
@@ -55,7 +57,6 @@ export default function renderApparel(apparel) {
         
     });
     
-
     p.appendChild(button);
 
     li.appendChild(p);
