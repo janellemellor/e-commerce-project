@@ -44,16 +44,5 @@ test('calculate order item', function(assert) {
     assert.equal(result, expect);
 });
 
-test('render line items', function(assert) {
-   
-    const object = {
-        id: '2', 
-        quantity: 4
-    };
-    const expect = '<tr>';
 
-    const result = renderLineItems(object, findById(object.id, apparel)).outerHTML;
-
-    assert.equal(result, expect);
-});
 
