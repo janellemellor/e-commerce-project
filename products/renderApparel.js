@@ -20,6 +20,20 @@ export default function renderApparel(apparel) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = apparel.id;
+    button.addEventListener('click', () => {
+       const shoppingCart = localStorage.getItem('CART');
+       if(!shoppingCart) {
+        return [];  
+    } else {
+        return JSON.parse(shoppingCart);
+     
+
+        } if(shoppingCart ) {return 
+
+    }
+
+      
+
     p.appendChild(button);
 
     li.appendChild(p);
