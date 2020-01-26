@@ -1,0 +1,35 @@
+body {
+    background-color: #7EC3B0;
+}
+
+header {
+    background-color: #DE7C5F;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #FAC2C1;
+    margin: 5px;
+}
+
+h2 {
+    color: #FDD0AF;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    margin: 5px;
+}
+
+#home-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#cart-link {
+    display: flex;
+    justify-content: right;
+}
+
+#store-link {
+    text-align: center;
+    font-size: 25px;
+}
