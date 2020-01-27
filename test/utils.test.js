@@ -1,9 +1,6 @@
 import cartData from '../data/cart.js';
 import findById, { calcLineItem, calcOrderItem } from '../common/utils.js';
 import apparel from '../data/apparel.js';
-import cartdata from '../data/cart.js';
-import renderLineItems from '../cart/render-line-items.js';
-
 
 const test = QUnit.test;
 QUnit.module('Utils functions');
@@ -12,10 +9,9 @@ test('find by id test', function(assert) {
     const id = '4';
     const expect = { 
         id: '4', 
-        name: 'yellow raincoat',
+        name: 'Yellow Raincoat',
         image: 'rainjacket.png',
         description: 'a classic raincoat that will keep even the most rain-avoidant pitty dry',
-        category: 'apparel',
         price: 17.99 
     };
 

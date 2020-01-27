@@ -1,5 +1,4 @@
 import apparel from '../data/apparel.js';
-// import cartData from '../data/cart.js';
 import renderLineItems from '../cart/render-line-items.js';
 import findById, { calcOrderItem } from '../common/utils.js';
 
@@ -37,8 +36,6 @@ else {
     placeOrderButton.addEventListener('click', () => {
         alert('Here is your order' + JSON.stringify(theCart, true, 2));
         localStorage.removeItem('CART');
-
-
     });
 }
    

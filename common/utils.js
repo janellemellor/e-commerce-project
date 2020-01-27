@@ -1,5 +1,3 @@
-// import apparel from '../data/apparel.js';
-
 export default function findById(itemId, cartArray) {
     for (let i = 0; i < cartArray.length; i++){
         const arrayItem = cartArray[i];
