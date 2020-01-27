@@ -3,61 +3,54 @@ const sweater = {
     name: 'Monkey Sweater',
     image: 'sweater.jpg',
     description: 'a cozy sweater with your favorite sock monkey that you know and love',
-    category: 'apparel',
     price: 26.98,
 };
 
 const hoodie = {
     id: '2', 
-    name: 'grey hoodie',
+    name: 'Grey Hoodie',
     image: 'hoodie.jpg',
     description: 'an everyday hoodie to keep you pitty dry and warm',
-    category: 'apparel',
     price: 15.99,
 };
 
 const jacket = {
     id: '3', 
-    name: 'green jacket',
+    name: 'Green Jacket',
     image: 'jacket.jpg',
     description: 'a delux jacket to keep your pitty toasty in the cold weather',
-    category: 'apparel',
     price: 35.97,
 };
 
 const raincoat = {
     id: '4', 
-    name: 'yellow raincoat',
+    name: 'Yellow Raincoat',
     image: 'rainjacket.png',
     description: 'a classic raincoat that will keep even the most rain-avoidant pitty dry',
-    category: 'apparel',
     price: 17.99,
 };
 
 const hat = {
     id: '5', 
-    name: 'chef hat',
+    name: 'Chef Hat',
     image: 'hat.jpg',
     description: 'the perfect hat for your little chef',
-    category: 'apparel',
     price: 12.99,
 };
 
 const tShirt = {
     id: '6', 
-    name: 'tshirt',
-    image: 'tshirt.jpg',
-    description: 'the t for your pit who likes to lounge in style',
-    category: 'apparel',
+    name: 'Polo Shirt',
+    image: 'tshirt.jpeg',
+    description: 'polos are for lounging',
     price: 15.48,
 };
 
 const glasses = {
     id: '7', 
-    name: 'reading glasses',
+    name: 'Reading Glasses',
     image: 'glasses.jpeg',
-    description: 'perfect for every hipster pit',
-    category: 'apparel',
+    description: 'a must for every hipster pit',
     price: 12.47,
 };
 

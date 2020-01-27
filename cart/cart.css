@@ -1,10 +1,31 @@
-table, td {
+table {
+    border: 3px solid navy;
+    height: 50%;
+    margin-top: 20px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    padding: 10px; 
+    text-align: center;
+}
+
+td {
     border: 3px solid navy;
     height: 50%;
     width: 90%;
     margin: 0 auto;
     padding: 10px; 
     text-align: center;
-};
+}
 
 
+#div-button {
+    text-align: center;
+}
+
+#order-button {
+    font-size: 15px;
+    margin: 15px;
+    color: navy;
+    background-color: #FAC2C1
+
+}

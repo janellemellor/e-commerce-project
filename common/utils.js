@@ -1,5 +1,3 @@
-// import apparel from '../data/apparel.js';
-
 export default function findById(itemId, cartArray) {
     for (let i = 0; i < cartArray.length; i++){
         const arrayItem = cartArray[i];
@@ -25,5 +23,5 @@ export function calcOrderItem(cart, apparel){
     for (let i = 0; i < cart.length; i++){
         orderTotal += calcLineItem(cart[i].quantity, findById(cart[i].id, apparel).price); 
     }
-    return orderTotal;
+    return orderTotal.toFixed(2);
 }

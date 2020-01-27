@@ -1,3 +1,5 @@
+import findById from '../common/utils.js';
+
 export default function renderApparel(apparel) {
     const li = document.createElement('li');
     li.className = apparel.category;
@@ -6,6 +8,10 @@ export default function renderApparel(apparel) {
     const h3 = document.createElement('h3');
     h3.textContent = apparel.name;
     li.appendChild(h3);
+
+    const descriptionP = document.createElement('p');
+    descriptionP.textContent = apparel.description;
+    li.appendChild(descriptionP);
 
     const p = document.createElement('p');
     p.className = 'price';
@@ -20,9 +26,40 @@ export default function renderApparel(apparel) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = apparel.id;
+    button.addEventListener('click', () => {
+        
+        const aCart = localStorage.getItem('CART');
+        
+        const makeShoppingCart = () => {
+            if (!aCart) {
+                return [];  
+            } else {
+                return JSON.parse(aCart);
+            }};
+    
+        const shoppingCart = makeShoppingCart();
+
+        let apparelInCart = findById(shoppingCart.id, apparel);
+
+        if (!apparelInCart) {
+            const lineItemOne = {
+                id: apparel.id,
+                quantity: 1
+            };
+
+            shoppingCart.push(lineItemOne);
+        } else {
+            apparelInCart.quantity++;
+        }
+
+        const updatedCart = JSON.stringify(shoppingCart);
+        localStorage.setItem('CART', updatedCart);
+        
+    });
+    
     p.appendChild(button);
 
     li.appendChild(p);
 
     return li;
-} 
+}
